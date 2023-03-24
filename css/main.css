@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+ --paleBlue: hsl(225, 100%, 94%);
+ --brightBlue: hsl(245, 75%, 52%);
+ --veryPaleBlue: hsl(225, 100%, 98%);
+ --desaturatedBlue: hsl(224, 23%, 55%);
+ --darkBlue: hsl(223, 47%, 23%);
+ --white: hsl(0, 0%, 100%);
+ --ff: 'Red Hat Display', sans-serif;
+}
+
+*,html,body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: var(--ff);
+ background-color: var(--paleBlue);
+}
+
+img{
+ width: 100%;
+ margin-block: 0;
+}
+
+.order-grid{
+ display: grid;
+ min-height: 100vh;
+ place-content: center;
+ margin: 1rem;
+}
+
+.order-container{
+ display: grid;
+  text-align: center;
+ max-width: 375px;
+  margin: 0;
+}
+
+.order__img{
+  border-radius: 21px 21px 0 0;
+}
+
+.order__info{
+ display: grid;
+ margin-block: 0;
+ padding: 2.3rem;
+ background-color: var(--white);
+border-radius: 0 0 21px 21px;
+}
+
+.order__heading{
+ font-weight: 900;
+ font-size: 1.5rem;
+ color: var(--darkBlue);
+ margin-bottom: 1rem;
+}
+
+.order__text{
+ line-height: 1.7rem;
+ color: var(--desaturatedBlue);
+}
+
+.order__subscription{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1.2rem;
+ margin-block: 2rem;
+ background-color: var(--veryPaleBlue);
+ border-radius: 10px;
+}
+
+.plan{
+ display: flex;
+  align-items: center;
+}
+
+.change{
+ color: var(--brightBlue);
+}
+
+.change:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.music-icon{
+ margin-right: 1rem;
+}
+
+.duration{
+ font-weight: 700;
+}
+
+.price{
+ color: var(--desaturatedBlue);
+}
+
+.proceed{
+ height: 3rem;
+ color: var(--white);
+ background-color: var(--brightBlue);
+ border: 0;
+ border-radius: 10px;
+ font-weight: 700;
+ font-size: 1rem;
+ margin-bottom: 2rem;
+ box-shadow: 8px 20px 12px hsl(225, 100%, 97%);
+ transition: 300ms;
+}
+
+.proceed:hover{
+  cursor: pointer;
+  opacity: .7;
+}
+
+.cancel{
+ font-weight: 700;
+ font-size: 1rem;
+ color: var(--desaturatedBlue);
+}
+
+.cancel:hover{
+  color: var(--darkBlue);
+  cursor: pointer;
+}
